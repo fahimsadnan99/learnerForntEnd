@@ -1,6 +1,7 @@
 import React from "react";
 import buyerCandle from "../../../assets/img/otc/CandleInfo/Buyer.jpg"
 import sellerCandle from "../../../assets/img/otc/CandleInfo/Seller.jpg"
+import VideoPlayer from "../../UniversalComponent"
 
 const index = () => {
   return (
@@ -73,6 +74,10 @@ const index = () => {
           <h5 className="my-4">সেলার কেন্ডেল দেখতে কেমন হবে বা কিভাবে দেখবো তার জন্যে সেলার কেন্ডেল একই ভাবে বুঝিয়ে দেওয়া হলো।</h5>
           <div>
             <img src={sellerCandle} alt="Buyer Candle" className="img-fluid"/>
+          </div>
+
+          <div>
+          <VideoPlayer title="CandleStick Information Video" url="https://www.youtube.com/shorts/dXi97O2kc-8"></VideoPlayer>
           </div>
         </div>
       </div>
