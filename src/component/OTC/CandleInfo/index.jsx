@@ -2,11 +2,13 @@ import React from "react";
 import buyerCandle from "../../../assets/img/otc/CandleInfo/Buyer.jpg"
 import sellerCandle from "../../../assets/img/otc/CandleInfo/Seller.jpg"
 import VideoPlayer from "../../UniversalComponent"
+import { useNavigate } from "react-router-dom";
 
 const index = () => {
+    const navigate = useNavigate()
   return (
     <div className="bgDark py-2">
-      <button className="btn btn-success m-3">GO BACK</button>
+      <button className="btn btn-success m-3" onClick={()=> navigate(-1)}>GO BACK</button>
       <div className="container pb-5">
         <h1 className="text-white border border-bottom  text-center bg-danger">
           Candle Information

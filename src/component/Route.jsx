@@ -4,7 +4,9 @@ import App from "../App"
 import PriceAction from "../component/PriceAction/index"
 import OTC  from "../component/OTC/Index"
 import MindSet from "../component/Psychology/index"
+//OTC Market COMPONENT
 import CandleInformation from "../component/OTC/CandleInfo"
+import StrongCandle from "../component/OTC/Strong Candle"
 
 export const Route = createBrowserRouter([
     {
@@ -32,6 +34,10 @@ export const Route = createBrowserRouter([
         {
             path : "/candleInformation",
             element : <CandleInformation></CandleInformation>
+        },
+        {
+            path : "/strongCandle",
+            element : <StrongCandle></StrongCandle>
         },
     ]
     }
