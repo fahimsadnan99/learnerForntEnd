@@ -9,6 +9,10 @@ import CandleInformation from "../component/OTC/CandleInfo"
 import StrongCandle from "../component/OTC/Strong Candle"
 import WeakCandle from "../component/OTC/WeakCandle"
 import Symmetrical from "../component/OTC/Symmetrical"
+import OrderFlow from "../component/OTC/OrderFlow"
+import DisorderFlow from "../component/OTC/DisorderFlow"
+
+
 
 export const Route = createBrowserRouter([
     {
@@ -48,6 +52,14 @@ export const Route = createBrowserRouter([
         {
             path : "/symmetrical",
             element : <Symmetrical></Symmetrical>
+        },
+        {
+            path : "/orderFlow",
+            element : <OrderFlow></OrderFlow>
+        },
+        {
+            path : "/disorderFlow",
+            element : <DisorderFlow></DisorderFlow>
         },
     ]
     }
