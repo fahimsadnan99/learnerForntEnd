@@ -114,10 +114,10 @@ const Index = () => {
        
           {Datas.map((item, index) => {
             return (
-              <Link to={"/" + item.to} className="btn text-start card col-sm-12 col-md-4 col-lg-3 mx-md-2 mx-lg-4 px-0 my-sm-2 py-0">
+              <Link to={"/" + item.to} className="btn text-start border-1 border-success card col-sm-12 col-md-4 col-lg-3 mx-md-2 mx-lg-4 px-0 my-sm-2 py-0">
                 <img src={item.img} className="card-img-top" alt={item.title} style={{width : "auto"}} />
-                <div className="card-body bg-danger bg-gradient py-1" key={index}>
-                  <h5 className="card-title text-white">{index+1} / {item.title}</h5>
+                <div className="card-body bg-success bg-gradient py-1" key={index}>
+                  <h5 className="card-title text-white align-center">{index+1} / {item.title}</h5>
                 </div>
               </Link>
             );
