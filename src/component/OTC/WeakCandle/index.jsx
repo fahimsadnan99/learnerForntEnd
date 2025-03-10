@@ -1,6 +1,8 @@
 import React from "react";
 import ComponentWrapper from "../../UniversalComponent/ComponentWrapper";
-import WeakCandle from "../../../assets/img/otc/WeakCandle/weakCandle.png"
+import WeakCandle from "../../../assets/img/otc/Weak Candle/weakCandle.png";
+import weakCandle2 from "../../../assets/img/otc/Weak Candle/weakCandle2.png";
+
 
 const index = () => {
   return (
@@ -51,6 +53,10 @@ const index = () => {
           <h4>নিছের চিত্রের মাধ্যমে দুর্বল বায়ার এবং সেলার কেন্ডেল দেখানো হলো...</h4>
 
            <img src={WeakCandle} alt="weak Candle img" className="img-fluid"/>
+
+           <img src={weakCandle2} alt="weak Candle img" className="img-fluid my-2"/>
+
+           {/* <img src={weakCandle3} alt="weak Candle img" className="img-fluid my-2"/> */}
         </div>
       </div>
     </ComponentWrapper>

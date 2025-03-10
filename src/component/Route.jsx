@@ -8,6 +8,7 @@ import MindSet from "../component/Psychology/index"
 import CandleInformation from "../component/OTC/CandleInfo"
 import StrongCandle from "../component/OTC/Strong Candle"
 import WeakCandle from "../component/OTC/WeakCandle"
+import Symmetrical from "../component/OTC/Symmetrical"
 
 export const Route = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ export const Route = createBrowserRouter([
         {
             path : "/weakCandle",
             element : <WeakCandle></WeakCandle>
+        },
+        {
+            path : "/symmetrical",
+            element : <Symmetrical></Symmetrical>
         },
     ]
     }
