@@ -11,6 +11,7 @@ import WeakCandle from "../component/OTC/WeakCandle"
 import Symmetrical from "../component/OTC/Symmetrical"
 import OrderFlow from "../component/OTC/OrderFlow"
 import DisorderFlow from "../component/OTC/DisorderFlow"
+import NormalMarket from "../component/OTC/NormalMarket"
 
 
 
@@ -60,6 +61,10 @@ export const Route = createBrowserRouter([
         {
             path : "/disorderFlow",
             element : <DisorderFlow></DisorderFlow>
+        },
+        {
+            path : "/normalMarket",
+            element : <NormalMarket></NormalMarket>
         },
     ]
     }
