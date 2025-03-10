@@ -1,14 +1,41 @@
-import React from 'react'
-import ComponentWrapper from '../../UniversalComponent/ComponentWrapper'
+import React from "react";
+import ComponentWrapper from "../../UniversalComponent/ComponentWrapper";
+import StrongCandle from "../../../assets/img/otc/Strong Candle/strongCandle.png"
 
 const index = () => {
   return (
-    <ComponentWrapper title="Strong Candle">
+    <ComponentWrapper
+      title="Strong Candle"
+      url={"https://www.youtube.com/shorts/dXi97O2kc-8"} 
+    >
+      <div className="lh-base py-3">
+        <p>
+          এইবার আমরা শিখবো স্ট্রং কেন্ডেল কিভাবে চিনতে পারবো, এই ধাপকে আমরা চা
+          পাতার সাথে যদি তুলনা করতে যাই কোন চা পাতা দেখতে ভালো আর কোন চা পাতা
+          দেখতে খারাপ বা নিম্ন মানের তার সাথে তুলনা করতে পারি।
+        </p>
+        <h5>স্ট্রং কেন্ডেল কিভাবে চিনবো...?</h5>
+        <ol >
+          <li>স্ট্রং কেন্ডেলের ২ পাশে প্রায় সমান উইক বা সেডো থাকবে । </li>
+          <li>স্ট্রং কেন্ডেল  মারুবুজূ কেন্ডেলও হতে পারে যার ২ পাশে কোনো উইক বা সেডো নাই । </li>
+          <li>একটা কেন্ডেলের উপরের উইক বা সেডো মানে সেলিং প্রেসার আর নিছের উইক  বা সেডো মানে বায়িং বা বায়ার  প্রেসার সেটা যে কালারের কেন্ডেল হোকনা কেনো,
+            <ol>
+              <li>যদি গ্রিন কেন্ডেলের নিছের উইক বড থাকে তার মানে বায়ারের স্ট্রং কেন্ডেল, কারন আমরা জানি বায়ার নিছ থেকে উপের দিকে প্রাইস নিয়ে যায়, এর ফলে যে প্রেসারটা আমরা দেখেতে পাই তা উইক বা সেডোর মাধ্যমে</li>
+              <li>যদি রেড কেন্ডেলের উপরের উইক বড থাকে তার মানে সেলারের স্ট্রং কেন্ডেল, কারন আমরা জানি সেলার উপর থেকে নিছের দিকে প্রাইস নিয়ে যায়, এর ফলে যে প্রেসারটা আমরা দেখেতে পাই তা উইক বা সেডোর মাধ্যমে</li>
+            </ol>
+          </li>
 
-   <h1>HII </h1>
-
+        </ol>
+   <div>
+    <h5>নিছে চিত্রের মাধ্যমে স্ট্রং কেন্ডেল আমরা দেখবো বায়ার এবং সেলার কেন্ডেলের...</h5>
+   </div>
+    <div>
+      <img src={StrongCandle} alt="Strong Candle Image" className="img-fluid" />
+    </div>
+        <h6 className="text-black bg-warning p-3">চিত্রে বায়ার এবং সেলার কেন্ডেল গুলোর শেষের কেন্ডেল  বিশেষ ক্ষেত্রে স্ট্রং তা আমরা পরে জানতে পারবো।</h6>
+      </div>
     </ComponentWrapper>
-  )
-}
+  );
+};
 
-export default index
+export default index;

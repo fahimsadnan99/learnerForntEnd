@@ -1,7 +1,8 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
+import VideoPlayer from "../UniversalComponent"
 
-const ComponentWrapper = ({title,children}) => {
+const ComponentWrapper = ({title,url,children}) => {
      const navigate = useNavigate()
   return (
     <div className="bgDark py-2">
@@ -12,6 +13,10 @@ const ComponentWrapper = ({title,children}) => {
         </h1>
         <div>
             {children}
+        </div>
+
+        <div>
+          <VideoPlayer title={`${title} video`} url={url}></VideoPlayer>
         </div>
     </div>
     </div>
