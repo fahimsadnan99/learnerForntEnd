@@ -12,6 +12,7 @@ import Symmetrical from "../component/OTC/Symmetrical"
 import OrderFlow from "../component/OTC/OrderFlow"
 import DisorderFlow from "../component/OTC/DisorderFlow"
 import NormalMarket from "../component/OTC/NormalMarket"
+import PressureMarket from "../component/OTC/PressureMarket"
 
 
 
@@ -65,6 +66,10 @@ export const Route = createBrowserRouter([
         {
             path : "/normalMarket",
             element : <NormalMarket></NormalMarket>
+        },
+        {
+            path : "/pressureMarket",
+            element : <PressureMarket></PressureMarket>
         },
     ]
     }
