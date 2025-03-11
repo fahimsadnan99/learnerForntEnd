@@ -16,6 +16,7 @@ import PressureMarket from "../component/OTC/PressureMarket"
 import WeakMarket from "../component/OTC/WeakMarket"
 import MarketStrength from "../component/OTC/MarketStrength"
 import Trend from "../component/OTC/Trend"
+import OpenArea from "../component/OTC/OpernArea"
 
 
 
@@ -85,6 +86,10 @@ export const Route = createBrowserRouter([
         {
             path : "/trend",
             element : <Trend></Trend>
+        },
+        {
+            path : "/openArea",
+            element : <OpenArea></OpenArea>
         },
     ]
     }
