@@ -8,7 +8,7 @@ import candleOpenArea from "../../../assets/img/otc/OpenArea/candle.png"
 const index = () => {
   return (
     <ComponentWrapper title="Open Area" url="">
-      <h5>ওপেন এরিয়া কি?</h5>
+      <h5 className="pt-3">ওপেন এরিয়া কি?</h5>
 
       <p>
         ওপেন এরিয়া, এই কথার মাঝে উত্তর আছে, ওপেন মানে খালি, এরিয়া মানে জায়গা।
