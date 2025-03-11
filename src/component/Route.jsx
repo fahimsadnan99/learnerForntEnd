@@ -13,6 +13,8 @@ import OrderFlow from "../component/OTC/OrderFlow"
 import DisorderFlow from "../component/OTC/DisorderFlow"
 import NormalMarket from "../component/OTC/NormalMarket"
 import PressureMarket from "../component/OTC/PressureMarket"
+import WeakMarket from "../component/OTC/WeakMarket"
+import MarketStrength from "../component/OTC/MarketStrength"
 
 
 
@@ -70,6 +72,14 @@ export const Route = createBrowserRouter([
         {
             path : "/pressureMarket",
             element : <PressureMarket></PressureMarket>
+        },
+        {
+            path : "/weakMarket",
+            element : <WeakMarket></WeakMarket>
+        },
+        {
+            path : "/marketStrength",
+            element : <MarketStrength></MarketStrength>
         },
     ]
     }

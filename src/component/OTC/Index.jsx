@@ -14,6 +14,9 @@ import normalReflection from "../../assets/img/otc/NormalReflection12.jpg"
 import pressureReflection from "../../assets/img/otc/Pressure Reflection13.jpg"
 import weakReflection from "../../assets/img/otc/WeakREflect14.jpg"
 import directionalizom from "../../assets/img/otc/directionlizom15.jpg"
+import marketStrength from "../../assets/img/otc/othersPHOTO/MarketStrength.jpg"
+
+
 import { Link } from "react-router-dom";
 
 
@@ -64,6 +67,11 @@ const Index = () => {
       img: weakMarket,
       title: "উইক বা দুর্বল মার্কেট",
       to: "weakMarket"
+    },
+    {
+      img: marketStrength,
+      title: "মার্কেট স্ট্রেংথ / মার্কেট নাম্বারিং",
+      to: "marketStrength"
     },
     {
       img: trend,
