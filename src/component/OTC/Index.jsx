@@ -86,7 +86,7 @@ const Index = () => {
     {
       img: normalReflection,
       title: "স্বাভাবিক রিফ্লেকশন ",
-      to: "normalReflection"
+      to: "strongReflection"
     },
     {
       img: pressureReflection,
