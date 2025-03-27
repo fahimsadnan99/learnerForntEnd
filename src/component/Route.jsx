@@ -19,6 +19,8 @@ import Trend from "../component/OTC/Trend"
 import OpenArea from "../component/OTC/OpernArea"
 import StrongReflection  from "../component/OTC/StrongReflection"
 import PressureReflection from "../component/OTC/PressureReflection"
+import WeakReflection  from "../component/OTC/WeakReflection"
+import Directionalizom from "../component/OTC/Directionalizom"
 
 
 
@@ -101,6 +103,14 @@ export const Route = createBrowserRouter([
         {
             path : "/pressureReflection",
             element : <PressureReflection></PressureReflection>
+        },
+        {
+            path : "/weakReflection",
+            element : <WeakReflection></WeakReflection>
+        },
+        {
+            path : "/directionalizom",
+            element : <Directionalizom></Directionalizom>
         },
     ]
     }
