@@ -4,7 +4,7 @@ import ComponentWrapper from '../../UniversalComponent/ComponentWrapper'
 const index = () => {
   return (
     <ComponentWrapper title="Directionalizom" url="">
-           <h1>Directionalizom page</h1>
+           <h1>Fahim Sadnan</h1>
     </ComponentWrapper>
   )
 }
