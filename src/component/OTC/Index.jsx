@@ -15,6 +15,16 @@ import pressureReflection from "../../assets/img/otc/Pressure Reflection13.jpg"
 import weakReflection from "../../assets/img/otc/WeakREflect14.jpg"
 import directionalizom from "../../assets/img/otc/directionlizom15.jpg"
 import marketStrength from "../../assets/img/otc/othersPHOTO/MarketStrength.jpg"
+import trapAbsent from "../../assets/img/otc/TrapSent.jpg"
+import trapOne from "../../assets/img/otc/TrapOne.jpg"
+import trapTwo from "../../assets/img/otc/TrapTwo.jpg"
+import trapThree from "../../assets/img/otc/TrapThree.jpg"
+import trapFour from "../../assets/img/otc/TrapFour.jpg"
+import trapFive from "../../assets/img/otc/TrapFive.jpg"
+import trapSix from "../../assets/img/otc/TrapSix.jpg"
+import trapSeven from "../../assets/img/otc/TrapSeven.jpg"
+import trapEight from "../../assets/img/otc/TrapEight.jpg"
+
 
 
 import { Link } from "react-router-dom";
@@ -103,6 +113,52 @@ const Index = () => {
       title: "দিকনির্দেশনা (Move Catch/ Direction)",
       to: "directionalizom"
     },
+    {
+      img: trapAbsent,
+      title: "ট্রেপ এবসেন্ট",
+      to: "trapAbsent"
+    },
+    {
+      img: trapOne,
+      title: "ট্রেপ ১",
+      to: "trapOne"
+    },
+    {
+      img: trapTwo,
+      title: "ট্রেপ ২",
+      to: "trapTwo"
+    },
+    {
+      img: trapThree,
+      title: "ট্রেপ ৩",
+      to: "trapThree"
+    },
+    {
+      img: trapFour,
+      title: "ট্রেপ ৪",
+      to: "trapFour"
+    },
+    {
+      img: trapFive,
+      title: "ট্রেপ ৫",
+      to: "trapFive"
+    },
+    {
+      img: trapSix,
+      title: "ট্রেপ ৬",
+      to: "trapSix"
+    },
+    {
+      img: trapSeven,
+      title: "ট্রেপ ৭",
+      to: "trapSeven"
+    },
+    {
+      img: trapEight,
+      title: "ট্রেপ ৮",
+      to: "trapEight"
+    },
+    
   ];
 
   return (
