@@ -23,6 +23,9 @@ import WeakReflection  from "../component/OTC/WeakReflection"
 import Directionalizom from "../component/OTC/Directionalizom"
 import TrapAbsent from "../component/OTC/TrapAbsent"
 import TrapOne from "../component/OTC/TrapOne"
+import TrapTwo from "../component/OTC/TrapTwo"
+import TrapThree from "../component/OTC/TrapThree"
+import TrapFour from "../component/OTC/TrapFour"
 
 
 
@@ -121,6 +124,18 @@ export const Route = createBrowserRouter([
         {
             path : "/trapOne",
             element : <TrapOne></TrapOne>
+        },
+        {
+            path : "/trapTwo",
+            element : <TrapTwo></TrapTwo>
+        },
+        {
+            path : "/trapThree",
+            element : <TrapThree></TrapThree>
+        },
+        {
+            path : "/trapFour",
+            element : <TrapFour></TrapFour>
         },
     ]
     }
