@@ -26,6 +26,9 @@ import TrapOne from "../component/OTC/TrapOne"
 import TrapTwo from "../component/OTC/TrapTwo"
 import TrapThree from "../component/OTC/TrapThree"
 import TrapFour from "../component/OTC/TrapFour"
+import TrapFive from "../component/OTC/TrapFive"
+import TrapSix from "../component/OTC/TrapSix"
+import TrapSeven from "../component/OTC/TrapSeven"
 
 
 
@@ -136,6 +139,18 @@ export const Route = createBrowserRouter([
         {
             path : "/trapFour",
             element : <TrapFour></TrapFour>
+        },
+        {
+            path : "/trapFive",
+            element : <TrapFive></TrapFive>
+        },
+        {
+            path : "/trapSix",
+            element : <TrapSix></TrapSix>
+        },
+        {
+            path : "/trapSeven",
+            element : <TrapSeven></TrapSeven>
         },
     ]
     }

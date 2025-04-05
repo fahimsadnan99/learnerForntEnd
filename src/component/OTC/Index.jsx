@@ -23,7 +23,9 @@ import trapFour from "../../assets/img/otc/TrapFour.jpg"
 import trapFive from "../../assets/img/otc/TrapFive.jpg"
 import trapSix from "../../assets/img/otc/TrapSix.jpg"
 import trapSeven from "../../assets/img/otc/TrapSeven.jpg"
-import trapEight from "../../assets/img/otc/TrapEight.jpg"
+import miniZone from "../../assets/img/otc/Minizone.jpg"
+import pressureGenerate from "../../assets/img/otc/PressureGenerate.jpg"
+import influence from "../../assets/img/otc/Influence.jpg"
 
 
 
@@ -154,9 +156,19 @@ const Index = () => {
       to: "trapSeven"
     },
     {
-      img: trapEight,
-      title: "ট্রেপ ৮",
-      to: "trapEight"
+      img: miniZone,
+      title: "মিনিজোন",
+      to: "miniZone"
+    },
+    {
+      img: pressureGenerate,
+      title: "প্রেসার জেনারেট",
+      to: "pressureGenerate"
+    },
+    {
+      img: influence,
+      title: "ইনফ্লুএন্স এবং হিনস্ট",
+      to: "influenceAndHints"
     },
     
   ];
