@@ -29,6 +29,8 @@ import TrapFour from "../component/OTC/TrapFour"
 import TrapFive from "../component/OTC/TrapFive"
 import TrapSix from "../component/OTC/TrapSix"
 import TrapSeven from "../component/OTC/TrapSeven"
+import MiniZone from "../component/OTC/MiniZone"
+import Influence from "../component/OTC/Influence&Hints"
 
 
 
@@ -152,6 +154,14 @@ export const Route = createBrowserRouter([
             path : "/trapSeven",
             element : <TrapSeven></TrapSeven>
         },
+        {
+            path : "/miniZone",
+            element : <MiniZone></MiniZone>
+        },
+        {
+            path : "/influence&Hints",
+            element : <Influence></Influence>
+        }
     ]
     }
 ])

@@ -26,6 +26,7 @@ import trapSeven from "../../assets/img/otc/TrapSeven.jpg"
 import miniZone from "../../assets/img/otc/Minizone.jpg"
 import pressureGenerate from "../../assets/img/otc/PressureGenerate.jpg"
 import influence from "../../assets/img/otc/Influence.jpg"
+import liquidity from "../../assets/img/otc/Liquidity.jpg"
 
 
 
@@ -161,15 +162,21 @@ const Index = () => {
       to: "miniZone"
     },
     {
+      img: influence,
+      title: "ইনফ্লুএন্স এবং হিনস্ট",
+      to: "influence&Hints"
+    },
+    {
+      img: liquidity,
+      title: "লিকুইডিটী",
+      to: "liquidity"
+    },
+    {
       img: pressureGenerate,
       title: "প্রেসার জেনারেট",
       to: "pressureGenerate"
     },
-    {
-      img: influence,
-      title: "ইনফ্লুএন্স এবং হিনস্ট",
-      to: "influenceAndHints"
-    },
+    
     
   ];
 
