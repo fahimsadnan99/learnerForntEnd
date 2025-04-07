@@ -39,6 +39,8 @@ import PressureGenerate from "../component/OTC/PressureGenerate"
 import DemandArea from "../component/OTC/DemandArea"
 import SupplyArea from "../component/OTC/SupplyArea"
 import AreaFillUp from "../component/OTC/AreaFillUp"
+import FiveSecondConfirmation from "../component/OTC/5Sec"
+import OptimalPressure from "../component/OTC/OptimalPressure"
 
 
 
@@ -202,6 +204,16 @@ export const Route = createBrowserRouter([
             path : "/areaFillUp",
             element : <AreaFillUp></AreaFillUp>
         },
+        {
+            path : "/fiveSecConfirmation",
+            element : <FiveSecondConfirmation></FiveSecondConfirmation>
+        },
+        {
+            path : "/optimalPressure",
+            element : <OptimalPressure></OptimalPressure>
+        },
+
+        
     ]
     }
 ])

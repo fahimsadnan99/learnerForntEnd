@@ -34,6 +34,7 @@ import Demand from "../../assets/img/otc/Demand.jpg"
 import Supply from "../../assets/img/otc/Supply.jpg"
 import AreaFillUp from "../../assets/img/otc/AreaFillUp.jpg"
 import FiveSecConfirmation from "../../assets/img/otc/5Sec.jpg"
+import OptimalPressure from "../../assets/img/otc/Optimal.jpg"
 
 
 
@@ -217,6 +218,11 @@ const Index = () => {
       img: FiveSecConfirmation,
       title: "৫ সেকেন্ড কনফার্মেশন",
       to: "fiveSecConfirmation"
+    },
+    {
+      img: OptimalPressure,
+      title: "ওপ্টিমাল প্রেসার",
+      to: "optimalPressure"
     },
     
     
