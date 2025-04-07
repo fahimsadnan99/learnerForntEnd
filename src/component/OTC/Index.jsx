@@ -27,6 +27,9 @@ import miniZone from "../../assets/img/otc/Minizone.jpg"
 import pressureGenerate from "../../assets/img/otc/PressureGenerate.jpg"
 import influence from "../../assets/img/otc/Influence.jpg"
 import liquidity from "../../assets/img/otc/Liquidity.jpg"
+import liquidityHunt from "../../assets/img/otc/LiquidityHunt.jpg"
+import sellSideLiquidity from "../../assets/img/otc/SellSide.jpg"
+import buySideLiquidity from "../../assets/img/otc/buySide.jpg"
 
 
 
@@ -170,6 +173,21 @@ const Index = () => {
       img: liquidity,
       title: "লিকুইডিটী",
       to: "liquidity"
+    },
+    {
+      img: liquidityHunt,
+      title: "লিকুইডিটী হান্ট",
+      to: "liquidityHunt"
+    },
+    {
+      img: sellSideLiquidity,
+      title: "সেল সাইড লিকুইডিটী",
+      to: "sellSideLiquidity"
+    },
+    {
+      img: buySideLiquidity,
+      title: "বায় সাইড লিকুইডিটী",
+      to: "buySideLiquidity"
     },
     {
       img: pressureGenerate,

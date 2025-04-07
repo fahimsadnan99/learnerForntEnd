@@ -31,6 +31,10 @@ import TrapSix from "../component/OTC/TrapSix"
 import TrapSeven from "../component/OTC/TrapSeven"
 import MiniZone from "../component/OTC/MiniZone"
 import Influence from "../component/OTC/Influence&Hints"
+import Liquidity from "../component/OTC/Liquidity"
+import LiquidityHunt from "../component/OTC/LiquidityHunt"
+import SellSideLiquidity from "../component/OTC/SellSideLiquidity"
+import BuySideLiquidity from "../component/OTC/BuySideLiquidity"
 
 
 
@@ -161,7 +165,23 @@ export const Route = createBrowserRouter([
         {
             path : "/influence&Hints",
             element : <Influence></Influence>
-        }
+        },
+        {
+            path : "/liquidity",
+            element : <Liquidity></Liquidity>
+        },
+        {
+            path : "/liquidityHunt",
+            element : <LiquidityHunt></LiquidityHunt>
+        },
+        {
+            path : "/sellSideLiquidity",
+            element : <SellSideLiquidity></SellSideLiquidity>
+        },
+        {
+            path : "/buySideLiquidity",
+            element : <BuySideLiquidity></BuySideLiquidity>
+        },
     ]
     }
 ])
