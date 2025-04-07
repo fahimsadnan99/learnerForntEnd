@@ -35,6 +35,7 @@ import Liquidity from "../component/OTC/Liquidity"
 import LiquidityHunt from "../component/OTC/LiquidityHunt"
 import SellSideLiquidity from "../component/OTC/SellSideLiquidity"
 import BuySideLiquidity from "../component/OTC/BuySideLiquidity"
+import PressureGenerate from "../component/OTC/PressureGenerate"
 
 
 
@@ -181,6 +182,10 @@ export const Route = createBrowserRouter([
         {
             path : "/buySideLiquidity",
             element : <BuySideLiquidity></BuySideLiquidity>
+        },
+        {
+            path : "/pressureGenerate",
+            element : <PressureGenerate></PressureGenerate>
         },
     ]
     }
