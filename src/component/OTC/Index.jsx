@@ -30,6 +30,10 @@ import liquidity from "../../assets/img/otc/Liquidity.jpg"
 import liquidityHunt from "../../assets/img/otc/LiquidityHunt.jpg"
 import sellSideLiquidity from "../../assets/img/otc/SellSide.jpg"
 import buySideLiquidity from "../../assets/img/otc/buySide.jpg"
+import Demand from "../../assets/img/otc/Demand.jpg"
+import Supply from "../../assets/img/otc/Supply.jpg"
+import AreaFillUp from "../../assets/img/otc/AreaFillUp.jpg"
+import FiveSecConfirmation from "../../assets/img/otc/5Sec.jpg"
 
 
 
@@ -194,6 +198,26 @@ const Index = () => {
       title: "প্রেসার জেনারেট",
       to: "pressureGenerate"
     },
+    {
+      img: Demand,
+      title: "মেজরমেন্ট ও ডীমান্ড এরিয়া",
+      to: "measurement&DemandArea"
+    },
+    {
+      img: Supply,
+      title: "মেজরমেন্ট ও স্প্লাই এরিয়া",
+      to: "measurement&SupplyArea"
+    },
+    {
+      img: AreaFillUp,
+      title: "এরিয়া ফিলাপ",
+      to: "areaFillUp"
+    },
+    {
+      img: FiveSecConfirmation,
+      title: "৫ সেকেন্ড কনফার্মেশন",
+      to: "fiveSecConfirmation"
+    },
     
     
   ];
@@ -215,7 +239,7 @@ const Index = () => {
        
           {Datas.map((item, index) => {
             return (
-              <Link to={"/" + item.to} className="btn text-start border-1 border-success card col-sm-12 col-md-4 col-lg-3 mx-md-2 mx-lg-4 px-0 my-sm-2 py-0">
+              <Link to={"/" + item.to} className="btn text-start border-1 border-success card col-sm-12 col-md-4 col-lg-3 mx-md-2 mx-lg-4 px-0 my-sm-2 py-0 my-2">
                 <img src={item.img} className="card-img-top" alt={item.title} style={{width : "auto"}} />
                 <div className="card-body bg-success bg-gradient py-1" key={index}>
                   <h5 className="card-title text-white align-center">{index+1} / {item.title}</h5>

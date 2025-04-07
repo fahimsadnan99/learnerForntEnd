@@ -15,7 +15,7 @@ const index = () => {
         <Link to={"../PriceAction"}  className='col-md-3 col-sm-12 my-2 my-md-0   mx-md-4 btn cursor-pointer'>
         <img src={priceAction} alt='priceAction' className='img-fluid rounded'  />
         </Link>
-        <Link to={"../OTC"} className='col-md-3 col-sm-12 my-2 my-md-0   mx-md-4 btn cursor-pointer'>
+        <Link to={"../MasterClass"} className='col-md-3 col-sm-12 my-2 my-md-0   mx-md-4 btn cursor-pointer'>
         <img src={OTC} alt='OTC'  className='img-fluid rounded ' />
         </Link>
         <Link to={"../Psychology"} className='col-md-3 col-sm-12 my-3 my-md-0   mx-md-4  btn cursor-pointer'>

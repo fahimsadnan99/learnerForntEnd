@@ -36,6 +36,9 @@ import LiquidityHunt from "../component/OTC/LiquidityHunt"
 import SellSideLiquidity from "../component/OTC/SellSideLiquidity"
 import BuySideLiquidity from "../component/OTC/BuySideLiquidity"
 import PressureGenerate from "../component/OTC/PressureGenerate"
+import DemandArea from "../component/OTC/DemandArea"
+import SupplyArea from "../component/OTC/SupplyArea"
+import AreaFillUp from "../component/OTC/AreaFillUp"
 
 
 
@@ -54,7 +57,7 @@ export const Route = createBrowserRouter([
             element : <PriceAction></PriceAction>
         },
         {
-            path : "/otc",
+            path : "/MasterClass",
             element : <OTC></OTC>
         },
         {
@@ -186,6 +189,18 @@ export const Route = createBrowserRouter([
         {
             path : "/pressureGenerate",
             element : <PressureGenerate></PressureGenerate>
+        },
+        {
+            path : "/measurement&DemandArea",
+            element : <DemandArea></DemandArea>
+        },
+        {
+            path : "/measurement&SupplyArea",
+            element : <SupplyArea></SupplyArea>
+        },
+        {
+            path : "/areaFillUp",
+            element : <AreaFillUp></AreaFillUp>
         },
     ]
     }
