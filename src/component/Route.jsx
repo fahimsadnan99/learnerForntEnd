@@ -41,6 +41,9 @@ import SupplyArea from "../component/OTC/SupplyArea"
 import AreaFillUp from "../component/OTC/AreaFillUp"
 import FiveSecondConfirmation from "../component/OTC/5Sec"
 import OptimalPressure from "../component/OTC/OptimalPressure"
+////////////////////////Price Action//////////////////////////////////
+import WhatIsPriceAction from "../component/PriceAction/PriceAction"
+import CandleIdentification from "../component/PriceAction/CandleIdentification"
 
 
 
@@ -212,6 +215,14 @@ export const Route = createBrowserRouter([
             path : "/optimalPressure",
             element : <OptimalPressure></OptimalPressure>
         },
+ ////////////////////////PRICE ACTION////////////////////////////////
+ {
+    path : "/priceAction1",
+    element : <WhatIsPriceAction></WhatIsPriceAction>
+},{
+    path : "/candleIdentification",
+    element : <CandleIdentification></CandleIdentification>
+},
 
         
     ]
