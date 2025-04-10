@@ -44,6 +44,11 @@ import OptimalPressure from "../component/OTC/OptimalPressure"
 ////////////////////////Price Action//////////////////////////////////
 import WhatIsPriceAction from "../component/PriceAction/PriceAction"
 import CandleIdentification from "../component/PriceAction/CandleIdentification"
+import AllLevels from "../component/PriceAction/AllLevels"
+import Scl from "../component/PriceAction/Scl"
+import Dcl from "../component/PriceAction/Dcl"
+import SupportAndResistance  from "../component/PriceAction/Support&Resistance"
+import Tcl from "../component/PriceAction/Tcl"
 
 
 
@@ -222,6 +227,26 @@ export const Route = createBrowserRouter([
 },{
     path : "/candleIdentification",
     element : <CandleIdentification></CandleIdentification>
+},
+{
+    path : "/allLevels",
+    element : <AllLevels></AllLevels>
+},
+{
+    path : "/scl",
+    element : <Scl></Scl>
+},
+{
+    path : "/dcl",
+    element : <Dcl></Dcl>
+},
+{
+    path : "/tcl",
+    element : <Tcl></Tcl>
+},
+{
+    path : "/support&Resistance",
+    element : <SupportAndResistance></SupportAndResistance>
 },
 
         

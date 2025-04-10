@@ -5,6 +5,17 @@ import AllLevels from "../../assets/img/PriceAction/AllLeves.jpg"
 import SupportAndResistance from "../../assets/img/PriceAction/Support&Resistance.jpg"
 import Trend from "../../assets/img/otc/trend10.jpg"
 import PriceAction from  "../../assets/img/PriceAction/PriceAction.jpg"
+import Scl from "../../assets/img/PriceAction/SCL.jpg"
+import Dcl from "../../assets/img/PriceAction/Dcl.jpg"
+import Tcl from "../../assets/img/PriceAction/Tcl.jpg"
+import OpenArea from "../../assets/img/PriceAction/Target.jpg"
+import InternalStructure from "../../assets/img/PriceAction/Is.jpg"
+import Zone from "../../assets/img/PriceAction/Zone.jpg"
+import Chart1 from "../../assets/img/PriceAction/Chart1.jpg"
+import Chart2 from "../../assets/img/PriceAction/Chart2.jpg"
+import RoundNumber from "../../assets/img/PriceAction/RN.png"
+import Reaction from "../../assets/img/PriceAction/CR.jpg"
+import Analysis from "../../assets/img/PriceAction/analysis.jpg"
 
 
 
@@ -41,13 +52,79 @@ const Index = () => {
     {
       img: SupportAndResistance,
       title: "সাপোট এন্ড রেজিস্টেন্স",
-      to: "support&Ressistance"
+      to: "support&Resistance"
+      
+    },
+    {
+      img: Scl,
+      title: "SCL",
+      to: "scl"
+      
+    },
+    {
+      img: Dcl,
+      title: "DCL",
+      to: "dcl"
+      
+    },
+    {
+      img: Tcl,
+      title: "TCL",
+      to: "tcl"
       
     },
     {
       img: Trend,
       title: "ট্রেন্ড",
       to: "trend"
+      
+    },
+    {
+      img: OpenArea,
+      title: "টার্গেট",
+      to: "openArea"
+      
+    },
+    {
+      img: InternalStructure,
+      title: "টার্গেট",
+      to: "openArea"
+      
+    },
+    {
+      img: Zone,
+      title: "টার্গেট",
+      to: "openArea"
+      
+    },
+    {
+      img: Chart1,
+      title: "টার্গেট",
+      to: "openArea"
+      
+    },
+    {
+      img: Chart2,
+      title: "টার্গেট",
+      to: "openArea"
+      
+    },
+    {
+      img: RoundNumber,
+      title: "টার্গেট",
+      to: "openArea"
+      
+    },
+    {
+      img: Reaction,
+      title: "টার্গেট",
+      to: "openArea"
+      
+    },
+    {
+      img: Analysis,
+      title: "টার্গেট",
+      to: "openArea"
       
     },
     
