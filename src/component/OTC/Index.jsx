@@ -35,6 +35,7 @@ import Supply from "../../assets/img/otc/Supply.jpg"
 import AreaFillUp from "../../assets/img/otc/AreaFillUp.jpg"
 import FiveSecConfirmation from "../../assets/img/otc/5Sec.jpg"
 import OptimalPressure from "../../assets/img/otc/Optimal.jpg"
+import Similarity from "../../assets/img/otc/SM.jpg"
 
 
 
@@ -186,12 +187,12 @@ const Index = () => {
     },
     {
       img: sellSideLiquidity,
-      title: "সেল সাইড লিকুইডিটী",
+      title: "এস এস লিকুইডিটী",
       to: "sellSideLiquidity"
     },
     {
       img: buySideLiquidity,
-      title: "বায় সাইড লিকুইডিটী",
+      title: "বি এস লিকুইডিটী",
       to: "buySideLiquidity"
     },
     {
@@ -213,6 +214,11 @@ const Index = () => {
       img: AreaFillUp,
       title: "এরিয়া ফিলাপ",
       to: "areaFillUp"
+    },
+    {
+      img: Similarity,
+      title: "সিমিলারিটি লিকুইডিটী",
+      to: "similarityLiquidity"
     },
     {
       img: FiveSecConfirmation,
@@ -245,7 +251,7 @@ const Index = () => {
        
           {Datas.map((item, index) => {
             return (
-              <Link to={"/" + item.to} className="btn text-start border-1 border-success card col-sm-12 col-md-4 col-lg-3 mx-md-2 mx-lg-4 px-0 my-sm-2 py-0 my-2">
+              <Link to={"/" + item.to} className=" btn text-start border-1 border-success card col-sm-12 col-md-4 col-lg-3 mx-md-2 mx-lg-4 px-0 my-sm-2 py-0 my-2">
                 <img src={item.img} className="card-img-top" alt={item.title} style={{width : "auto"}} />
                 <div className="card-body bg-success bg-gradient py-1" key={index}>
                   <h5 className="card-title text-white align-center">{index+1} / {item.title}</h5>

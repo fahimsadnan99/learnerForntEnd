@@ -15,9 +15,9 @@ const ComponentWrapper = ({title,url,children}) => {
             {children}
         </div>
 
-        <div>
+        {/* <div>
           <VideoPlayer title={`${title} video`} url={url}></VideoPlayer>
-        </div>
+        </div> */}
     </div>
     </div>
   )

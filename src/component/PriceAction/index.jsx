@@ -16,6 +16,8 @@ import Chart2 from "../../assets/img/PriceAction/Chart2.jpg"
 import RoundNumber from "../../assets/img/PriceAction/RN.png"
 import Reaction from "../../assets/img/PriceAction/CR.jpg"
 import Analysis from "../../assets/img/PriceAction/analysis.jpg"
+import fiveSec from "../../assets/img/otc/5Sec.jpg"
+
 
 
 
@@ -87,44 +89,50 @@ const Index = () => {
     },
     {
       img: InternalStructure,
-      title: "টার্গেট",
-      to: "openArea"
+      title: "ইন্টারনাল স্ট্রাকচার",
+      to: "internalStructure"
       
     },
     {
       img: Zone,
-      title: "টার্গেট",
-      to: "openArea"
+      title: "জোন",
+      to: "zone"
       
     },
     {
       img: Chart1,
-      title: "টার্গেট",
-      to: "openArea"
+      title: "চার্ট-১",
+      to: "chart1"
       
     },
     {
       img: Chart2,
-      title: "টার্গেট",
-      to: "openArea"
+      title: "চার্ট-২",
+      to: "chart2"
       
     },
     {
       img: RoundNumber,
-      title: "টার্গেট",
-      to: "openArea"
+      title: "রাউন্ড নাম্বার",
+      to: "roundNumber"
       
     },
     {
       img: Reaction,
-      title: "টার্গেট",
-      to: "openArea"
+      title: "রিয়েকসন",
+      to: "reaction"
+      
+    },
+    {
+      img: fiveSec,
+      title: "ফাইভ সেকেন্ড কনফারমেসন",
+      to: "fiveSecConfirmation"
       
     },
     {
       img: Analysis,
-      title: "টার্গেট",
-      to: "openArea"
+      title: "এনালাইসিস",
+      to: "analysis"
       
     },
     

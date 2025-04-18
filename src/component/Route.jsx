@@ -49,6 +49,23 @@ import Scl from "../component/PriceAction/Scl"
 import Dcl from "../component/PriceAction/Dcl"
 import SupportAndResistance  from "../component/PriceAction/Support&Resistance"
 import Tcl from "../component/PriceAction/Tcl"
+import InternalStructure from "../component/PriceAction/InternalStructure"
+import Zone from "../component/PriceAction/Zone"
+import Chart1 from "../component/PriceAction/Chart1"
+import Chart2 from "../component/PriceAction/Chart2"
+import RoundNumber from "../component/PriceAction/RoundNumber"
+import CandleReaction from "../component/PriceAction/Reaction"
+import PriceActionAnalysis from "../component/PriceAction/Analisis"
+
+
+/////USER SECTION//////
+
+
+import SignupForm from "./User/Signup.jsx";
+import Login from "./User/Login.jsx";
+
+
+
 
 
 
@@ -248,8 +265,47 @@ export const Route = createBrowserRouter([
     path : "/support&Resistance",
     element : <SupportAndResistance></SupportAndResistance>
 },
+{
+    path : "/internalStructure",
+    element : <InternalStructure></InternalStructure>
+},
+{
+    path : "/zone",
+    element : <Zone></Zone>
+},
+{
+    path : "/chart1",
+    element : <Chart1></Chart1>
+},
+{
+    path : "/chart2",
+    element : <Chart2></Chart2>
+},
+{
+    path : "/roundNumber",
+    element : <RoundNumber></RoundNumber>
+},
+{
+    path : "/reaction",
+    element : <CandleReaction></CandleReaction>
+},
+{
+    path : "/analysis",
+    element : <PriceActionAnalysis></PriceActionAnalysis>
+},
 
-        
+/////USER SECTION//////
+{
+    path : "/SignupForm",
+    element : <SignupForm></SignupForm>
+},
+{
+    path : "/LoginForm",
+    element : <Login></Login>
+},
+
+
+
     ]
     }
 ])
