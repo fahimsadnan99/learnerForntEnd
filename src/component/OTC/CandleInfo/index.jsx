@@ -78,9 +78,9 @@ const index = () => {
             <img src={sellerCandle} alt="Buyer Candle" className="img-fluid"/>
           </div>
 
-          <div>
+          {/* <div>
           <VideoPlayer title="CandleStick Information Video" url="https://www.youtube.com/shorts/dXi97O2kc-8"></VideoPlayer>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

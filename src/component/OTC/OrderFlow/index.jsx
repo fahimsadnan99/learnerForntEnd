@@ -7,9 +7,9 @@ import decrementImg from "../../../assets/img/otc/OrderFlow/dicrement.png"
 const index = () => {
   return (
     <ComponentWrapper title="Order Flow" ur="https://traderSadnan">
-      <p>
+      <p className="mt-4">
         দোকানে গিয়ে দোকানদারকে আমরা যখন কোন জিনিস কেনার জন্য অর্ডার দেই যেমন
-        আমাকে এক কেজি চিনি দেন এখানে 1 কেজি চিনির প্যাকেটটা আছে সেটা আমাদের একটা
+        আমাকে এক কেজি চিনি দেন, এখানে 1 কেজি চিনির প্যাকেটটা আছে সেটা আমাদের একটা
         অর্ডার,
       </p>
 

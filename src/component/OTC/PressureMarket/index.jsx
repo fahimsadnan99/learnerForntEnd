@@ -6,7 +6,7 @@ import pressure2 from "../../../assets/img/otc/PressureMarket/pressure2.png"
 const index = () => {
   return (
     <ComponentWrapper title="Pressure Market" url="">
-      <p>
+      <p className="mt-4">
         নরমাল ক্যান্ডেল বা স্ট্রং ক্যান্ডেলে আমরা দেখছি যে একটা ক্যান্ডেল দুই
         পাশে প্রায় সমান উইক থাকে।
       </p>

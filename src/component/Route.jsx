@@ -65,7 +65,9 @@ import SignupForm from "./User/Signup.jsx";
 import Login from "./User/Login.jsx";
 
 
+//////////////////////////
 
+import Moneymanagement from "./Money"
 
 
 
@@ -91,7 +93,10 @@ export const Route = createBrowserRouter([
             path : "/psychology",
             element : <MindSet></MindSet>
         },
-
+        {
+            path : "/MoneyManagement",
+            element : <Moneymanagement></Moneymanagement>
+        },
   //OTC ALL LOGIC AND PATH START FROM HEAR
         {
             path : "/candleInformation",

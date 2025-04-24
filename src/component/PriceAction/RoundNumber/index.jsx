@@ -1,6 +1,7 @@
 import React from "react";
 import ComponentWrapper from "../../UniversalComponent/ComponentWrapper";
 import R1 from "../../../assets/img/PriceAction/RoundNumber/R1.jpg"
+import R2 from "../../../assets/img/PriceAction/RoundNumber/R2.jpg"
 
 const index = () => {
   return (
@@ -51,6 +52,7 @@ const index = () => {
         ট্রেন্ডে রাউন্ড নাম্বার গুলা আমাদের সাপোর্ট হিসেবে কাজ করে
       </p>
        <img src={R1} alt="Single Candle Stick" className="img-fluid my-2" />
+       <img src={R2} alt="Single Candle Stick" className="img-fluid my-2" />
     </ComponentWrapper>
   );
 };

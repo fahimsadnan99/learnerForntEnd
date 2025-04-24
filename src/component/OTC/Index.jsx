@@ -215,11 +215,11 @@ const Index = () => {
       title: "এরিয়া ফিলাপ",
       to: "areaFillUp"
     },
-    {
-      img: Similarity,
-      title: "সিমিলারিটি লিকুইডিটী",
-      to: "similarityLiquidity"
-    },
+    // {
+    //   img: Similarity,
+    //   title: "সিমিলারিটি লিকুইডিটী",
+    //   to: "similarityLiquidity"
+    // },
     {
       img: FiveSecConfirmation,
       title: "৫ সেকেন্ড কনফার্মেশন",
