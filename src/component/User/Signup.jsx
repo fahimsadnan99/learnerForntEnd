@@ -60,6 +60,7 @@ function SignupForm() {
   return (
     <div className="container">
       <div className="row">
+        <div style={{fontSize : "14px"}}>
        <h6 className="mt-4 p-2 bg-danger text-white">
               ট্রেডিং একটা ঝুঁকিপূর্ণ ব্যবসা, আপনার সম্পূর্ণ টাকা এখানে ইনভেস্ট করবেন
               না,এখানে আপনি সাইকোলজির জন্যে আপনার সম্পূর্ণ টাকা লস করতে পারেন।{" "}
@@ -74,7 +75,10 @@ function SignupForm() {
               এনালাইসিস বেসিক টু মাস্টার সব কিছু টপিক বাই টপিক আপনাদের জন্যে দিয়ে
               দিলাম।
             </p>
-      <div className="col-lg-4 col-md-8 col-sm-12 mx-auto mt-5">
+           
+            </div>
+            <a href="https://t.me/traderSadnan1" className="pointer">টেলিগ্রামে জয়েন করতে ক্লিক করুন</a>
+      <div className="col-lg-4 col-md-8 col-sm-12 mx-auto mt-2">
         <h2 className="text-center mb-4">Sign Up</h2>
         <form onSubmit={handleSubmit} className="mx-3">
           <div className="form-group">
