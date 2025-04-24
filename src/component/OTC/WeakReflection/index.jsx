@@ -3,7 +3,7 @@ import ComponentWrapper from '../../UniversalComponent/ComponentWrapper'
 import Wr1 from "../../../assets/img/otc/WEAKREFLECTION/Wr1.png"
 import Wr2 from "../../../assets/img/otc/WEAKREFLECTION/WR2.png"
 import Wr3 from "../../../assets/img/otc/WEAKREFLECTION/Wr3.png"
-import Wr4 from "../../../assets/img/otc/WEAKREFLECTION/Wr4.png"
+import Wr4 from "../../../assets/img/otc/WEAKREFLECTION/wr4.png"
 
 const index = () => {
   return (
