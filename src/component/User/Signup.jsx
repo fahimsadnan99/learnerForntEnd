@@ -140,7 +140,7 @@ function SignupForm() {
           </Link>
         </p>
         <div className="mt-4">
-        <p>লিঙ্ক - <a href="https://market-qx.pro/sign-up/?lid=511402">Quotex Link - Click Me</a></p>
+        <p>লিঙ্ক - <a href="https://market-qx.trade/sign-up/?lid=1630480">Quotex Link - Click Me</a></p>
         <p>লিঙ্ক থেকে কোটেস্ক ID খুলে, UID দিয়ে সাইনআপ করুন </p>
         <p>ওয়েবসাইডে সাইনআপ করতে পাসওয়াড নিজের মত করে দিন, কোটেস্কএর পাসওয়াড দিয়ে  সাইনআপ/লগইন লাগবেনা।</p>
       </div>
