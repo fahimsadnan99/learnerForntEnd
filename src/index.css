@@ -2,14 +2,14 @@
   box-sizing: 0;
   padding: 0;
   margin: 0;
-  background-color: #2C244B;
+  background-color: #494848;
   color: #E3DCDC;
 }
 h5 {
   background-color: transparent;
 }
 .bgDark {
-  background-color: rgb(8, 0, 8);
+  background-color: #494848;
   color : white;
   font-style: italic;
 }
