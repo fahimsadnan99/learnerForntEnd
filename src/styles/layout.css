@@ -1,0 +1,196 @@
+/* ==========================================================================
+   Site chrome: header, footer, app shell
+   ========================================================================== */
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1 0 auto;
+}
+
+/* Header ------------------------------------------------------------------ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 3px double var(--rule-strong);
+}
+
+.site-header__bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  min-height: 4.25rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--text);
+  text-decoration: none;
+  font-family: var(--font-read);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  white-space: nowrap;
+}
+
+.brand:hover {
+  color: var(--text);
+}
+
+.brand img {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin-left: auto;
+}
+
+.site-nav__link {
+  padding: 0.55rem 0.8rem;
+  color: var(--text-soft);
+  font-size: 0.97rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.site-nav__link:hover {
+  color: var(--text);
+}
+
+.site-nav__link.active {
+  color: var(--text);
+  border-bottom-color: var(--bull);
+}
+
+/* Actions sit on the right. Beside the nav, the nav's own auto margin does the
+   pushing; in the brand-only header (login / sign up) the actions push themselves. */
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: auto;
+}
+
+.site-nav + .site-header__actions {
+  margin-left: 0;
+}
+
+.site-header__menu {
+  display: none;
+}
+
+@media (max-width: 52rem) {
+  .site-header__menu {
+    display: inline-grid;
+  }
+
+  /* The open menu is out of flow on small screens, so push the actions instead */
+  .site-nav + .site-header__actions {
+    margin-left: auto;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -1rem;
+    right: -1rem;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 0;
+    padding: 0.5rem 1rem 1rem;
+    background: var(--bg);
+    border-bottom: 3px double var(--rule-strong);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav__link {
+    padding: 0.8rem 0.25rem;
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .site-nav__link.active {
+    border-bottom-color: var(--bull);
+  }
+}
+
+/* Footer ------------------------------------------------------------------ */
+.site-footer {
+  margin-top: clamp(3rem, 8vw, 6rem);
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.site-footer__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 2rem 3rem;
+  padding-block: 2.25rem 1.5rem;
+}
+
+.site-footer__name {
+  margin: 0 0 0.5rem;
+  color: var(--text);
+  font-family: var(--font-read);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.site-footer__risk {
+  margin: 0;
+  max-width: 38rem;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--bear);
+  line-height: 1.85;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.site-footer__links a {
+  color: var(--text-soft);
+  text-decoration: none;
+}
+
+.site-footer__links a:hover {
+  color: var(--bull);
+  text-decoration: underline;
+}
+
+.site-footer__legal {
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 52rem) {
+  .site-footer__inner {
+    grid-template-columns: 1fr;
+  }
+}

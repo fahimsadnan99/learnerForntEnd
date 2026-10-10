@@ -1,18 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="bn" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/img/t.png" />
+    <link rel="icon" type="image/png" href="/src/assets/img/t-mark.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Trader Sadnan — প্রাইস অ্যাকশন, মাস্টার ক্লাস (OTC), সাইকোলজি ও মানি ম্যানেজমেন্ট নিয়ে সম্পূর্ণ ট্রেডিং কোর্স।"
+    />
+    <meta name="theme-color" content="#0c1512" />
     <title>Trader Sadnan</title>
+    <script>
+      // Apply the saved theme before first paint so the page never flashes.
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          document.documentElement.setAttribute(
+            "data-theme",
+            t === "light" || t === "dark" ? t : "dark"
+          );
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-
-
-
-
-

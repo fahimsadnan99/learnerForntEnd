@@ -1,19 +1,11 @@
 import React from "react";
 import buyerCandle from "../../../assets/img/otc/CandleInfo/Buyer.jpg"
 import sellerCandle from "../../../assets/img/otc/CandleInfo/Seller.jpg"
-import VideoPlayer from "../../UniversalComponent"
-import { useNavigate } from "react-router-dom";
+import ArticleShell from "../../UniversalComponent/ArticleShell"
 
 const index = () => {
-    const navigate = useNavigate()
   return (
-    <div className="bgDark py-2">
-      <button className="btn btn-success m-3" onClick={()=> navigate(-1)}>GO BACK</button>
-      <div className="container pb-5">
-        <h2 className="text-white border p-2 text-center bg-success">
-          Candle Information
-        </h2>
-
+    <ArticleShell title="Candle Information">
         <div>
           <p className="pt-4">
             ট্রেডিং এ আমাদের হাতে খড়ি হয় ক্যান্ডেলের মাধ্যমে, আর সেই
@@ -65,25 +57,25 @@ const index = () => {
             নিচে চিত্রের মাধ্যমে আমরা বুঝার চেষ্টা করবো...
           </p>
 
-      <h5 className="my-2">নিছে চিত্রে 
-        <p>প্রথম অংশ ৫ সেকেন্ডের ১২ টা কেন্ডেল</p>
-        <p>দ্বিতীয় অংশ লাইন চ্যাঁট বা এরিয়া চ্যাঁট</p>
-        <p>শেষ অংশ যোগফল বা ১ মিনিটের কেন্ডেল দেখতে কেমন হয়েছে তা</p>
-        </h5>
+      <p>নিছে চিত্রে</p>
+          <ul>
+            <li>প্রথম অংশ ৫ সেকেন্ডের ১২ টা কেন্ডেল</li>
+            <li>দ্বিতীয় অংশ লাইন চ্যাঁট বা এরিয়া চ্যাঁট</li>
+            <li>শেষ অংশ যোগফল বা ১ মিনিটের কেন্ডেল দেখতে কেমন হয়েছে তা</li>
+          </ul>
           <div>
             <img src={buyerCandle} alt="Buyer Candle" className="img-fluid"/>
           </div>
           <h5 className="my-4">সেলার কেন্ডেল দেখতে কেমন হবে বা কিভাবে দেখবো তার জন্যে সেলার কেন্ডেল একই ভাবে বুঝিয়ে দেওয়া হলো।</h5>
           <div>
-            <img src={sellerCandle} alt="Buyer Candle" className="img-fluid"/>
+            <img src={sellerCandle} alt="Seller Candle" className="img-fluid"/>
           </div>
 
           {/* <div>
           <VideoPlayer title="CandleStick Information Video" url="https://www.youtube.com/shorts/dXi97O2kc-8"></VideoPlayer>
           </div> */}
         </div>
-      </div>
-    </div>
+    </ArticleShell>
   );
 };
 

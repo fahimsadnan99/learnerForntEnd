@@ -1,0 +1,262 @@
+/* ==========================================================================
+   Home: hero with the drawn chart, and the course contents list
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  padding-block: clamp(2.5rem, 6vw, 5rem) clamp(2.5rem, 6vw, 4.5rem);
+}
+
+/* Graph paper behind the hero, fading out toward the bottom */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px),
+    linear-gradient(var(--grid-major) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-major) 1px, transparent 1px);
+  background-size: 24px 24px, 24px 24px, 120px 120px, 120px 120px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 50%, transparent);
+  mask-image: linear-gradient(to bottom, #000 50%, transparent);
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4.5rem);
+}
+
+.hero__title {
+  margin: 0;
+  font-family: var(--font-read);
+  font-weight: 600;
+  font-size: clamp(2.6rem, 7vw, 4.9rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.hero__lede {
+  margin: 1.25rem 0 0;
+  max-width: 30rem;
+  font-family: var(--font-read);
+  font-size: clamp(1.15rem, 2.2vw, 1.4rem);
+  line-height: 1.8;
+}
+
+.hero__byline {
+  margin: 1rem 0 0;
+  max-width: 30rem;
+  color: var(--text-soft);
+  font-family: var(--font-read);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.hero__cta {
+  margin-top: 1.75rem;
+}
+
+/* The chart plate ---------------------------------------------------------- */
+.plate {
+  margin: 0;
+  padding: 0.75rem 0.75rem 0.5rem;
+  background: var(--bg-sunk);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+}
+
+.plate__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.plate__caption {
+  padding: 0.5rem 0.25rem 0.1rem;
+  color: var(--text-soft);
+  font-size: 0.85rem;
+}
+
+.cp-grid line {
+  stroke: var(--grid-major);
+  stroke-width: 1;
+}
+
+.cp-wick {
+  stroke-width: 1.6;
+}
+
+.cp-bull .cp-wick {
+  stroke: var(--bull);
+}
+
+.cp-bull .cp-body {
+  fill: var(--bull);
+}
+
+.cp-bear .cp-wick {
+  stroke: var(--bear);
+}
+
+.cp-bear .cp-body {
+  fill: var(--bear);
+}
+
+.cp-resistance {
+  stroke: var(--text-soft);
+  stroke-width: 1.4;
+  stroke-dasharray: 6 5;
+}
+
+.cp-zone {
+  fill: var(--bull);
+  fill-opacity: 0.12;
+  stroke: var(--bull);
+  stroke-opacity: 0.55;
+  stroke-width: 1;
+}
+
+.cp-label {
+  fill: var(--text-soft);
+  font-family: var(--font-ui);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* One orchestrated moment: the candles draw in left to right, then the marks appear */
+@media (prefers-reduced-motion: no-preference) {
+  .cp-candle {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    animation: cp-in 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    animation-delay: calc(var(--i) * 45ms + 250ms);
+  }
+
+  .cp-note {
+    animation: cp-fade 0.7s ease both;
+    animation-delay: 2.1s;
+  }
+
+  @keyframes cp-in {
+    from {
+      opacity: 0;
+      transform: scaleY(0.15);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes cp-fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* Course contents ---------------------------------------------------------- */
+.course {
+  padding-top: clamp(1rem, 3vw, 2rem);
+}
+
+.course__title {
+  margin: 0 0 1rem;
+  font-family: var(--font-read);
+  font-weight: 500;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.course-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-row {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.course-row__thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--bg-sunk);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  filter: saturate(0.7) brightness(0.92);
+  transition: filter 0.2s ease, border-color 0.2s ease;
+}
+
+.course-row__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.course-row__title {
+  font-family: var(--font-read);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.25;
+}
+
+.course-row__desc {
+  max-width: 34rem;
+  color: var(--text-soft);
+  font-family: var(--font-read);
+  font-size: 1.08rem;
+  line-height: 1.85;
+}
+
+.course-row__meta {
+  margin-top: 0.15rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.course-row:hover .course-row__title,
+.course-row:focus-visible .course-row__title {
+  color: var(--bull);
+}
+
+.course-row:hover .course-row__thumb,
+.course-row:focus-visible .course-row__thumb {
+  filter: none;
+  border-color: var(--bull);
+}
+
+@media (max-width: 52rem) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 40rem) {
+  .course-row {
+    grid-template-columns: 7rem minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .course-row__desc {
+    font-size: 1rem;
+  }
+}

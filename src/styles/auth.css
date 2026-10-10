@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Sign up and log in
+   ========================================================================== */
+
+.auth {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding-block: clamp(2rem, 6vw, 4.5rem);
+}
+
+.auth--narrow {
+  display: block;
+  max-width: 27rem;
+}
+
+.auth__intro {
+  font-family: var(--font-read);
+  font-size: 1.15rem;
+  line-height: 1.95;
+}
+
+.auth__intro p {
+  margin: 0 0 1.2rem;
+}
+
+.auth__risk {
+  padding: 0.9rem 1.1rem;
+  background: color-mix(in srgb, var(--bear) 15%, transparent);
+  border-left: 3px solid var(--bear);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 1.05rem;
+}
+
+.panel {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: var(--bg-raised);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+}
+
+.auth__title {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-read);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.field__control {
+  position: relative;
+}
+
+.field__control input {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  background: var(--bg-sunk);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  color: var(--text);
+  font: inherit;
+  line-height: 1.4;
+}
+
+.field__control input:focus {
+  border-color: var(--bull);
+  outline: 2px solid var(--bull);
+  outline-offset: 1px;
+}
+
+/* Leave room for the show/hide button inside the password field */
+.field__control:has(.field__toggle) input {
+  padding-right: 3rem;
+}
+
+.field__toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.35rem;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius);
+  color: var(--text-soft);
+  cursor: pointer;
+}
+
+.field__toggle:hover {
+  color: var(--text);
+}
+
+/* The UID is a long number; hide the spinner arrows that sit over it */
+.field__control input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.field__control input[type="number"]::-webkit-outer-spin-button,
+.field__control input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.auth__submit {
+  margin-top: 0.4rem;
+  width: 100%;
+}
+
+.auth__switch {
+  margin: 1.25rem 0 0;
+  color: var(--text-soft);
+  text-align: center;
+}
+
+.auth__howto {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 3px double var(--rule-strong);
+  color: var(--text-soft);
+  font-family: var(--font-read);
+  font-size: 1.02rem;
+  line-height: 1.85;
+}
+
+.auth__howto p {
+  margin: 0 0 0.6rem;
+}
+
+@media (max-width: 52rem) {
+  .auth {
+    grid-template-columns: 1fr;
+  }
+}

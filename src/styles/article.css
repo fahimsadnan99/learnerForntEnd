@@ -1,0 +1,333 @@
+/* ==========================================================================
+   Lesson pages
+   One reading column. Bengali needs generous leading, so body copy sits at
+   a 1.95 line height. Headings and body share the serif; UI stays sans.
+   ========================================================================== */
+
+.article {
+  padding-block: clamp(1.25rem, 4vw, 2.5rem) 0;
+}
+
+.article__inner {
+  width: min(100% - 2rem, var(--measure));
+  margin-inline: auto;
+}
+
+/* Reading progress, drawn over the very top edge of the page */
+.article-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 70;
+  height: 3px;
+  pointer-events: none;
+}
+
+.article-progress__bar {
+  height: 100%;
+  background: var(--bull);
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+}
+
+.article__back {
+  padding: 0.5rem 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.article__head {
+  padding-block: clamp(1.25rem, 4vw, 2.25rem) 1.1rem;
+}
+
+.article__title {
+  margin: 0;
+  font-family: var(--font-read);
+  font-weight: 600;
+  font-size: clamp(2rem, 5.5vw, 3.1rem);
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+}
+
+.article__end-rule {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.article__inner > .article__back:last-child {
+  margin-bottom: 1rem;
+}
+
+/* Body ------------------------------------------------------------------- */
+.article-body {
+  padding-top: 1.75rem;
+  font-family: var(--font-read);
+  font-size: clamp(1.1rem, 2.4vw, 1.2rem);
+  line-height: 1.95;
+}
+
+.article-body > :first-child {
+  margin-top: 0;
+}
+
+.article-body p {
+  margin: 0 0 1.2rem;
+}
+
+.article-body h2,
+.article-body h3,
+.article-body h4,
+.article-body h5,
+.article-body h6 {
+  font-family: var(--font-read);
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.article-body h2,
+.article-body h3,
+.article-body h4 {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.45rem;
+}
+
+/* Section sub-heads get a short bull-green rule, like a margin mark */
+.article-body h5 {
+  margin: 2.4rem 0 1rem;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--bull);
+  font-size: 1.25rem;
+}
+
+.article-body h6 {
+  margin: 1.75rem 0 0.9rem;
+  font-size: 1.1rem;
+}
+
+.article-body ol,
+.article-body ul {
+  margin: 0 0 1.3rem;
+  padding-left: 1.6rem;
+}
+
+.article-body li {
+  margin-bottom: 0.45rem;
+  padding-left: 0.2rem;
+}
+
+.article-body li::marker {
+  color: var(--text-soft);
+}
+
+.article-body hr {
+  margin: 2.75rem 0;
+  border: 0;
+  border-top: 3px double var(--rule-strong);
+  opacity: 1;
+}
+
+.article-body strong,
+.article-body b {
+  font-weight: 650;
+}
+
+/* Chart images are "plates": framed, and they open larger on click */
+.article-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-block: 1.6rem !important;
+  padding: 6px;
+  background: var(--bg-sunk);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  cursor: zoom-in;
+}
+
+/* Notices ------------------------------------------------------------------
+   Amber marks a rule to apply. Red marks a mistake or danger. */
+.notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin: 0 0 1.75rem;
+  padding: 1rem 1.15rem;
+  background: color-mix(in srgb, var(--amber) 12%, transparent);
+  border-left: 3px solid var(--amber);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.notice svg {
+  flex: none;
+  margin-top: 0.55rem;
+  color: var(--amber);
+}
+
+.article-body .notice p {
+  margin: 0;
+  font-size: 1.04rem;
+  line-height: 1.9;
+}
+
+/* Articles were written with Bootstrap colour utilities for emphasis; map
+   them onto this palette so they stay readable in both themes. */
+.article-body .bg-warning,
+.article-body .bg-danger {
+  padding: 0.9rem 1.1rem !important;
+  color: var(--text) !important;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.article-body .bg-warning {
+  background: color-mix(in srgb, var(--amber) 13%, transparent) !important;
+  border-left: 3px solid var(--amber);
+}
+
+.article-body .bg-danger {
+  background: color-mix(in srgb, var(--bear) 15%, transparent) !important;
+  border-left: 3px solid var(--bear);
+}
+
+/* Inline highlights (a span, not a block) stay inline */
+.article-body span.bg-warning,
+.article-body span.bg-danger {
+  display: inline;
+  padding: 0.05rem 0.4rem !important;
+  border-left: 0;
+  border-radius: var(--radius);
+}
+
+.article-body .text-black,
+.article-body .text-white {
+  color: var(--text) !important;
+}
+
+.article-body .text-danger {
+  color: var(--bear-text) !important;
+}
+
+/* Loading --------------------------------------------------------------- */
+.article-loading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-block: 4rem;
+  color: var(--text-soft);
+  font-family: var(--font-read);
+  font-size: 1.1rem;
+}
+
+.article-loading__dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--bull);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .article-loading__dot {
+    animation: loading-pulse 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes loading-pulse {
+    from {
+      opacity: 0.25;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* Lightbox ---------------------------------------------------------------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 3.5rem 1rem 1rem;
+  background: var(--scrim);
+  cursor: zoom-out;
+}
+
+.lightbox__img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background: var(--bg-sunk);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  cursor: default;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  color: var(--text);
+  background: var(--bg-raised);
+  border-color: var(--rule-strong);
+}
+
+/* Money Management ------------------------------------------------------- */
+.article-body .lead-line {
+  margin: 0 0 0.5rem;
+  color: var(--text-soft);
+  font-size: 1.2rem;
+}
+
+.article-body .tips {
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: tip;
+}
+
+.article-body .tip {
+  position: relative;
+  margin: 0;
+  padding: 1.5rem 0 1.5rem 3.4rem;
+  border-bottom: 1px solid var(--rule);
+  counter-increment: tip;
+}
+
+.article-body .tip::before {
+  content: counter(tip);
+  position: absolute;
+  top: 1.25rem;
+  left: 0;
+  color: var(--bull);
+  font-family: var(--font-read);
+  font-size: 2.3rem;
+  font-weight: 500;
+  line-height: 1;
+  font-variant-numeric: lining-nums;
+}
+
+.article-body .tip__title {
+  margin: 0 0 0.6rem;
+  font-size: 1.3rem;
+}
+
+.article-body .tip__text {
+  margin: 0 0 0.8rem;
+}
+
+.article-body .tip__note {
+  margin: 0;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--rule-strong);
+  color: var(--text-soft);
+  font-size: 1.02rem;
+}
+
+.article-body .closing-line {
+  margin: 2.25rem 0 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.75;
+}

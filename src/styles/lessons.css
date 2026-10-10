@@ -1,0 +1,155 @@
+/* ==========================================================================
+   Course contents pages (Price Action, Master Class)
+   ========================================================================== */
+
+.lessons {
+  padding-top: clamp(2rem, 5vw, 3.5rem);
+}
+
+.page-head {
+  padding-bottom: 1.25rem;
+}
+
+.page-head__title {
+  margin: 0;
+  font-family: var(--font-read);
+  font-weight: 500;
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.page-head__intro {
+  margin: 0.75rem 0 0;
+  max-width: 38rem;
+  color: var(--text-soft);
+  font-family: var(--font-read);
+  font-size: 1.15rem;
+  line-height: 1.85;
+}
+
+.lessons__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  padding-block: 1.5rem 0.75rem;
+}
+
+.lessons__search {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 1 1 18rem;
+  max-width: 26rem;
+  padding: 0 0.85rem;
+  background: var(--bg-sunk);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  color: var(--text-soft);
+}
+
+.lessons__search:focus-within {
+  border-color: var(--bull);
+}
+
+.lessons__search input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.7rem 0;
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  font: inherit;
+  outline: none;
+}
+
+.lessons__search input::placeholder {
+  color: var(--text-soft);
+  opacity: 0.8;
+}
+
+.lessons__count {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.lessons__empty {
+  padding: 2rem 0;
+  color: var(--text-soft);
+  font-family: var(--font-read);
+  font-size: 1.1rem;
+}
+
+.lesson-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 27rem), 1fr));
+  column-gap: 3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lesson {
+  display: grid;
+  grid-template-columns: 2rem 6.5rem minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.lesson__number {
+  color: var(--text-soft);
+  font-family: var(--font-read);
+  font-size: 1.1rem;
+  font-variant-numeric: lining-nums tabular-nums;
+  text-align: right;
+}
+
+.lesson__thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--bg-sunk);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  /* The thumbnails are neon; tone them down so the page stays calm */
+  filter: saturate(0.7) brightness(0.92);
+  transition: filter 0.2s ease, border-color 0.2s ease;
+}
+
+.lesson__title {
+  font-family: var(--font-read);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.lesson:hover .lesson__title,
+.lesson:focus-visible .lesson__title {
+  color: var(--bull);
+}
+
+.lesson:hover .lesson__thumb,
+.lesson:focus-visible .lesson__thumb {
+  filter: none;
+  border-color: var(--bull);
+}
+
+@media (max-width: 30rem) {
+  .lesson {
+    grid-template-columns: 1.6rem 5.25rem minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .lesson__title {
+    font-size: 1.02rem;
+  }
+}
